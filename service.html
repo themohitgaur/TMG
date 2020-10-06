@@ -1,0 +1,854 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TMG Logistics</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Acme|Merriweather" rel="stylesheet">
+
+  <style>
+@media only screen
+and (max-width : 500px) {
+  .alignment{
+    margin-top: 40px;
+    background-color: rgba(255,255,255,.7);
+    font-size: 12px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+
+    .size{
+  font-size: 30px;
+}
+body { 
+    background-image: url('14.jpg');
+ 	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+}
+ 
+@media only screen
+and (min-device-width : 500px)
+and (max-device-width : 768px)
+ {
+    .alignment{
+    margin-top: 40px;
+    background-color: rgba(255,255,255,.7);
+    font-size: 12px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+
+    .size{
+  font-size: 30px;
+}
+
+body { 
+    background-image: url('14.jpg');
+ 	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+}
+ 
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+ {
+  .alignment{
+    margin-top: 40px;
+    background-color: rgba(255,255,255,.7);
+    font-size: 12px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+
+    .size{
+  font-size: 30px;
+}
+body { 
+    background-image: url('14.jpg');
+ 	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+}
+ 
+@media only screen
+and (min-width : 1024px) {
+  .alignment{
+    margin-top: 40px;
+    background-color: rgba(255,255,255,.7);
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+  }
+  body { 
+    background-image: url('14.jpg');
+ 	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+}
+
+.size{
+  font-size: 50px;
+}
+
+
+
+
+
+.table thead{
+	background-color: #2E1114;
+	color: white;
+}
+.table thead tr th{
+	text-align: center;
+}
+
+.color{
+  color: #D79922;
+}
+
+.table tbody tr{
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+		<style>
+		.style{
+			color: #D79922
+		}
+.menu_style{
+          border-radius: 0px;
+          background-color: #2E1114;
+          margin: 0px;
+        }
+
+        .menu_style .brand{
+          color: #FFFFFF;
+        }
+        .menu_style .brand:hover {
+        color: #D79922;
+    }
+
+        .menu_style .menu_inner>li>a {
+        color: #FFFFFF;
+    }
+
+    .menu_style .menu_inner>li>a:hover {
+        color: #D79922;
+    }
+    .menu_style .icon_style:focus, .menu_style .icon_style:hover {
+        background-color: #D79922;
+        border-color: #FFFFFF;
+    }
+
+    .menu_style .icon_style {
+        border-color: #D79922;
+    }
+
+
+      .affix {
+      top: 0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+
+  .affix + .upper{
+      padding-top: 70px;
+  }
+
+
+@media only screen
+and (max-width : 500px) {
+  .upper{
+    background-color: #130708;
+    height: 100px;
+    color: white;
+    padding-top: 15px;
+     
+  }
+
+}
+ 
+@media only screen
+and (min-device-width : 500px)
+and (max-device-width : 768px)
+ {
+    .upper{
+    background-color: #130708;
+    height: 100px;
+    color: white;
+    padding-top: 15px;
+     
+  }
+
+}
+ 
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+ {
+  .upper{
+    background-color: #130708;
+    height: 100px;
+    color: white;
+    padding-top: 15px;
+     
+  }
+}
+ 
+@media only screen
+and (min-width : 1024px) {
+  .upper{
+    background-color: #130708;
+    height: 50px;
+    color: white;
+    padding-top: 15px;
+     
+  }
+}
+
+
+
+.color{
+	color: #D79922;
+}
+
+
+	</style>
+	<div class="container-fluid upper">
+	<div class="row">
+		<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+			
+		</div>
+		<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+			<p><b class="color">For Any Query</b></p>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+			<p><b class="color">Call us on :</b> <span class="glyphicon glyphicon-earphone style"></span> 9667138676</p>
+		</div>
+		<div class="col-lg-4 col-md- col-sm-6 col-xs-12">
+			<p><b class="color">Mail Us: </b><span class="glyphicon glyphicon-envelope style"></span> tmglogistics1@gmail.com</p>
+		</div>
+	</div>
+	</div>
+	<nav class="navbar navbar-inverse menu_style" data-spy="affix" data-offset-top="47">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle icon_style" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand brand" href="index.html">Tmg Logistics</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">    	
+      <ul class="nav navbar-nav navbar-right menu_inner">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="ourmission.html">Our Mission</a></li>
+        <li><a href="service.html">Services</a></li>
+     <!--  <li><a href="client.html">Client</a></li>-->
+      <li><a href="contact.html">Contact Us</a></li>
+
+    </ul>
+      </ul>
+     <!--  <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul> -->
+    </div>
+  </div>
+</nav> 
+	<div class="container">
+	<div class="row">
+		<div class="alignment">
+		<p><h2 class="size color text-center">Our Services For South</h2></p>
+		<div class="table-responsive">
+		  <table class="table table-bordered table-hover">
+		    <thead>
+		      <tr>
+		        <th>All Station of South </th>
+		        <th>All Types of Truck</th>
+		        <th>Delivery Time</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr>
+		        <td>Bengaluru </td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		        <td>3 Days</td>
+		      </tr>
+		      <tr>
+		        <td>Chennai</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		        <td>3 Days</td>
+		      </tr>
+		      <tr>
+		        <td>Hyderabad</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		        <td>3 Days</td>
+		      </tr>
+		      <tr>
+		        <td>Kanchipura</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		        <td>3 Days</td>
+		      </tr>
+		      <tr>
+		        <td>Coimbatore</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		        <td>3 Days</td>
+		      </tr>
+		      <tr>
+		        <td>Madurai</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		        <td>3 Days</td>
+		      </tr>
+		      <tr>
+		        <td>Vishakhapatnam</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		        <td>3 Days</td>
+		      </tr>
+		      <tr>
+		        <td>Thiruvanathpuram</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		        <td>3 Days</td>
+		      </tr>
+		      <tr>
+		        <td>Mysore</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		        <td>3 Days</td>
+		      </tr>
+		      <tr>
+		        <td>Mangalore</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		        <td>3 Days</td>
+		      </tr>
+		      <tr>
+		        <td>Pondicherry</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		        <td>3 Days</td>
+		      </tr>
+		      <tr>
+		        <td>Vijaywada</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		        <td>3 Days</td>
+		      </tr>
+		      <tr>
+		        <td>Thiruchipalli</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		        <td>3 Days</td>
+		      </tr>
+		      <tr>
+		        <td>Hubli</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		        <td>3 Days</td>
+		      </tr>
+		      <tr>
+		        <td>Thrissur</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		        <td>3 Days</td>
+		      </tr>
+		      <tr>
+		        <td>Vellore</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		        <td>3 Days</td>
+		      </tr>
+		      <tr>
+		        <td>Nellore</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		        <td>3 Days</td>
+		      </tr>
+		      <tr>
+		        <td>Amaravati</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		        <td>3 Days</td>
+		      </tr>
+		      <tr>
+		        <td>Gulbarga </td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		        <td>3 Days</td>
+		      </tr>
+		      <tr>
+		        <td>Belghum</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		        <td>3 Days</td>
+		      </tr>
+		      <tr>
+		        <td>Bellary</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		        <td>3 Days</td>
+		      </tr>
+		      <tr>
+		        <td>Rajmundry</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		        <td>3 Days</td>
+		      </tr>
+		      <tr>
+		        <td>Kochi</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		        <td>3 Days</td>
+		      </tr>
+		    </tbody>
+		  </table>
+		  </div>
+	</div>
+	<div class="alignment">
+		<p><h2 class="size color text-center">Our Services For East</h2></p>
+		<div class="table-responsive">
+		  <table class="table table-bordered table-hover">
+		    <thead>
+		      <tr>
+		        <th>All Station of East </th>
+		        <th>All Types of Truck</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr>
+		        <td>Kolkata </td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Bhuwaneshwar</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Patna</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Cuttack</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Ranchi</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Howrah</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Jamshedpur</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Hooghly</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Bhilai</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Golanpur</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Bihar</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Dhanbad</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Haldia</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Durgapur</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		    </tbody>
+		  </table>
+		  </div>
+	</div>
+	<div class="alignment">
+		<p><h2 class="size color text-center">Our Services For North</h2></p>
+		<div class="table-responsive">
+		  <table class="table table-bordered table-hover">
+		    <thead>
+		      <tr>
+		        <th>All Station of North </th>
+		        <th>All Types of Truck</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr>
+		        <td>Delhi </td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Kanpur (UP)</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Lucknow(UP)</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Kancludhiana(Punjab)</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Coimbatagra(UP)</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Madmeerut(UP)</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Faridabad(Haryana)</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Amritsar(Punjab)</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Varanasi(UP)</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Jalandar(Punjab)</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Gurgaon(Haryana)</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Srinagar(J & K)</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Chandigarh(Punjab)</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Bhiwani(Haryana)</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Ambala(Haryana)</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Panipat(Haryana)</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Bari Brahamana(J & K)</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		    </tbody>
+		  </table>
+		  </div>
+	</div>
+<div class="alignment">
+		<p><h2 class="size color text-center">Our Services For West</h2></p>
+		<div class="table-responsive">
+		  <table class="table table-bordered table-hover">
+		    <thead>
+		      <tr>
+		        <th>All Station of West </th>
+		        <th>All Types of Truck</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr>
+		        <td>Surat </td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Jamnagar</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Rajkot</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Nagpur</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Jaipur</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Jodhpur</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Aurangabad</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Vadodara</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Goa</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Panji</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Solapur</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		      <tr>
+		        <td>Chittorgarh</td>
+		        <td>LPT/TORUS/CONTAINER/TRAILER</td>
+		      </tr>
+		    </tbody>
+		  </table>
+		  </div>
+	</div>
+
+
+
+
+
+		<div class="alignment">
+		<b class="size color text-center">Vehicle Classification :</b><br><br>
+		<div class="table-responsive">
+		  <table class="table table-bordered table-hover">
+		    <thead>
+		      <tr>
+		        <th>Vehicle Type</th>
+		        <th>Size (Feet)</th>
+		        <th>Weight (M.Ton)</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr>
+		        <td>Tata 407 </td>
+		        <td>9.10 X 6.2 X 6.2 </td>
+		        <td>2.5</td>
+		      </tr>
+		      <tr>
+		        <td>LCV / Canter</td>
+		        <td>17 X 7X 6.2 </td>
+		        <td>5</td>
+		      </tr>
+		      <tr>
+		        <td>L.P.T. </td>
+		        <td>19 X 7 X 6.3</td>
+		        <td>7</td>
+		      </tr>
+		      <tr>
+		        <td>Truck</td>
+		        <td>18 X7X 6.5</td>
+		        <td>9</td>
+		      </tr>
+		      <tr>
+		        <td>Open Truck </td>
+		        <td>18 X 7 X 8</td>
+		        <td>9</td>
+		      </tr>
+		      <tr>
+		        <td>Touras</td>
+		        <td>22 X 7X 7 </td>
+		        <td>15</td>
+		      </tr>
+		      <tr>
+		        <td>High Bed Trailer </td>
+		        <td>40 X 8 X 7</td>
+		        <td>20</td>
+		      </tr>
+		      <tr>
+		        <td>Semi Low Bed Trailer</td>
+		        <td>40 X 8 X 8.6</td>
+		        <td>20</td>
+		      </tr>
+		      <tr>
+		        <td>Low Bed Trailer </td>
+		        <td>24X13X13</td>
+		        <td>20</td>
+		      </tr>
+		      <tr>
+		        <td>Double Excel </td>
+		        <td>40X8X7 </td>
+		        <td>22.5</td>
+		      </tr>
+		      <tr>
+		        <td>Triple excel </td>
+		        <td>40X8X7 </td>
+		        <td>27</td>
+		      </tr>
+		    </tbody>
+		  </table>
+		  </div>
+	</div>
+
+	
+
+
+		<div class="alignment">
+			<b class="size color text-center">Container Capacity :</b><br><br>	
+				<div class="table-responsive">
+		 		 <table class="table table-bordered table-hover">
+		    		<thead>
+		    		<tr>
+				        <td>Container Capacity :</td>
+				        <td>Size (Feet)</td>
+				        <td>Weight (M.Ton)</td>
+				    </tr>
+				</thead>
+				<tbody>
+					<tr>
+				        <td>20 Feet Single Axle Container</td>
+				        <td>20 x 8 x 8</td>
+				        <td>6 MT</td>
+				    </tr>
+				    <tr>
+				        <td>24 Feet Single Axle Container </td>
+				        <td>24 x 8 x 8</td>
+				        <td>8 MT</td>
+				    </tr>
+				    <tr>
+				        <td>32 Feet Single Axle Container </td>
+				        <td>32 x 8 x 8</td>
+				        <td>7 MT</td>
+				    </tr>
+				    <tr>
+				        <td>32 Feet Single Axle Container</td>
+				        <td>32 x 8 x 10</td>
+				        <td>7 MT</td>
+				    </tr>
+				    <tr>
+				        <td>32 Feet Single Axle Container</td>
+				        <td>32 x 8 x 8</td>
+				        <td>14 MT</td>
+				    </tr>
+				    <tr>
+				        <td>32 Feet Single Axle Container</td>
+				        <td>32 x 8 x 10</td>
+				        <td>7 MT</td>
+				    </tr>
+				    <tr>
+				        <td>32 Feet Single Axle Container</td>
+				        <td>32 x 8 x 10</td>
+				        <td>14 MT</td>
+				    </tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+</div>
+<style>
+
+@media only screen
+and (max-width : 500px) {
+.footer{
+  height: 600px;
+  background-color: #252525;
+  color: white;
+  margin-top: 20px;
+}
+
+}
+ 
+@media only screen
+and (min-device-width : 500px)
+and (max-device-width : 768px)
+ {
+.footer{
+  height: 500px;
+  background-color: #252525;
+  color: white;
+  margin-top: 20px;
+}
+}
+ 
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+ {
+.footer{
+  height: 450px;
+  background-color: #252525;
+  color: white;
+  margin-top: 20px;
+}
+
+
+}
+ 
+@media only screen
+and (min-width : 1024px) {
+.footer{
+  height: 250px;
+  background-color: #252525;
+  color: white;
+  margin-top: 20px;
+}
+}
+
+.color{
+  color:#D79922;
+}
+</style> 
+<body>
+
+
+	<div class="footer">
+  <div class="container">
+    <div class="row">
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <h4 class="color">About</h4>
+    <p><b>Founded in 2017</b>, we owe our continued growth to our loyal clients, word-of-mouth referrals, and the highly dedicated associates at times square logistics.</p>
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <h4 class="color">OFFICE HOURS</h4>
+    <p><b class="color">Operations</b> 24/7</p>
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <h4 class="color">CONTACT DETAILS</h4>
+    <b class="color">Address:</b> Neemrana mode Rillco Industrial area Neemrana 301705</p>
+              <p><b class="color">Phone No:</b>9667138676</p>
+              <p><b class="color">Email:</b>tmglogistics1@gmail.com</p>
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <h4 class="color">GET A QUOTATION</h4>
+    <p><b>Contact us</b> for any quotation requests. <br>TLS Logistics is able to offer our wide range of business and corporate clients a suite of services which means that they receive a one stop integrated and efficient service</p>
+  </div>
+</div>
+<div class="text-center" >......</div>
+<div class="text-center color">©2019 TMG Logistics<br>  Developed By: Mohit Sharma</div>
+</div>
+</div>
+
+</body>
+</head>
+</html></body>
+</html>
